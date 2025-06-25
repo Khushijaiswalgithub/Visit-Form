@@ -12,7 +12,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("https://vercel.com/khus-projects-eb41d056/visit-form/64wCtfQ1A4RREfV7V1rpmqwT8KGG/api/submit", form)
+    axios.post("https://visit-form.onrender.com/api/submit", form)
       .then(() => {
         setForm({ name: "", mobile: "", purpose: "", area: "", district: "" });
         setSubmitted(true);
