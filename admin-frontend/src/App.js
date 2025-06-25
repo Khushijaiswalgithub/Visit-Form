@@ -8,7 +8,7 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/submissions")
+    axios.get("https://vercel.com/khus-projects-eb41d056/visit-form/64wCtfQ1A4RREfV7V1rpmqwT8KGG/api/submissions")
       .then(res => {
         setSubmissions(res.data);
         setLoading(false);
